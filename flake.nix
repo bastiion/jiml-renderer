@@ -1,5 +1,5 @@
 {
-  description = "a jinja template yaml to tex renderer";
+  description = "flake for a Python script that renders Jinja templates with data from YAML files.";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
   inputs.flake-utils.url = "github:numtide/flake-utils";
