@@ -1,5 +1,5 @@
 {
-  description = "a yaml 2 tex template renderer";
+  description = "a jinja template yaml to tex renderer";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
   inputs.flake-utils.url = "github:numtide/flake-utils";
@@ -31,7 +31,7 @@
           };
 
           pythonEnv = mach-nix-utils.mkPython {
-            requirements = builtins.readFile "${jimlSrc}"/requirements.txt;
+            requirements = builtins.readFile "${jimlSrc}/requirements.txt";
           };
 
         in
